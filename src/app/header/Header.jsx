@@ -1,8 +1,9 @@
 import styles from './header.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
+import Search from './Search';
+
 
 
 
@@ -18,17 +19,7 @@ export default function Header() {
                     <Link href="/">YFITOPS</Link>
                 </div>
 
-                <div className={styles.searchContainer}>
-                    <label htmlFor="searchArtist"></label>
-                    <input type="searchArtist" placeholder='Qui souhaitez-vous écouter ?' />
-
-                    <button>
-                        <div className={styles.iconSearch}>
-                            <FontAwesomeIcon icon={faSearch} />
-                        </div>
-                        Rechercher
-                    </button>
-                </div>
+                <Search />
 
                 <div className={styles.userContainer}>
                     <ul>
