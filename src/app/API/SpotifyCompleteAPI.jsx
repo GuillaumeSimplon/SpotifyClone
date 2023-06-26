@@ -2,7 +2,7 @@ import axios from "axios";
 
 const fetchSpotifyApi = async (url) => {
     const token = await getSpotifyAuthToken();
-
+    console.log(token);
     if (token) {
         try {
             const response = await axios.get(
@@ -68,7 +68,7 @@ let apiKey = null;
 
 export async function getAPIKey() {
     if (apiKey === null) {
-        await resetAPIKey ();
+        await resetAPIKey();
     }
     return apiKey
 }
