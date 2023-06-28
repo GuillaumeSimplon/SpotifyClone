@@ -16,9 +16,9 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Header />
         <div>
-          <div className='appContainer'>
-            <p>{getAPIKey()}</p>
-          </div>
+          {/* <div className='appContainer'>
+          </div> */}
+          <p>{getAPIKey()}</p>
         </div>
         {children}</body>
     </html>

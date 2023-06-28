@@ -1,0 +1,35 @@
+.cardList {
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(#1a1a1a, #2a2a2a);
+    border-radius: 4px;
+    box-shadow: 0px 4px 20px #00000055;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    img {
+        width: 180px;
+        height: 180px;
+        margin: auto;
+        background-color: rgb(42, 42, 42);
+        border-radius: 4px;
+        box-shadow: 0px 4px 20px #00000055;
+    }
+
+    h2 {
+        margin-left: 10px;
+        color: white;
+        font-size: 18px;
+        font-family: sans-serif;
+        font-weight: 800;
+    }
+
+    p {
+        margin-left: 10px;
+        color: white;
+        font-size: 14px;
+        font-family: sans-serif;
+        font-weight: 500;
+    }
+}
