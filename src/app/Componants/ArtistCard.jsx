@@ -1,3 +1,4 @@
+/////////////////////////////////// ESSAI 1 ///////////////////////////////////
 // 'use client';
 // import styles from './card.module.scss';
 
@@ -16,19 +17,52 @@
 
 
 
-import fetchSpotifyApi from "../API/SpotifyCompleteAPI";
-export default async function  ArtistCard () {
-  const data = await fetchSpotifyApi (`artists/0TnOYISbd1XYRBk9myaseg`);
-  console.log(data);
 
-  const newReleases = data.artist.name
 
-     return (
-      <div>
-     { newReleases.map(item => (
-        <p>{item.name}</p>
-      ))}
-      </div>
+/////////////////////////////////// ESSAI 4 ///////////////////////////////////
+// import fetchSpotifyApi from "../API/SpotifyCompleteAPI";
+
+// export default async function ArtistCard() {
+//   const data = await fetchSpotifyApi(`/artists?ids=2CIMQHirSU0MQqyYHq0eOx%2C57dN52uHvrHOxijzpIgu3E%2C1vCWHaC5f2uS3yhpwWbIA6`);
+
+//   // artists/0TnOYISbd1XYRBk9myaseg
+
+//   console.log(data);
+
+//   let newReleases = [];
+//   if (data && data.artist) {
+//     newReleases = data.artist.name;
+//   }
+
+//   return (
+//     <div>
+//       {newReleases.map(item => (
+//         <p>{item.name}</p>
+//       ))}
+//     </div>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+/////////////////////////////////// ESSAI 8 ///////////////////////////////////
+'use client';
+import React from 'react';
+import styles from './card.module.scss';
+
+export default function ArtistCard({ imageSrc, name, release_date }) {
+    return (
+      <div className={styles.cardList}>
+            {imageSrc && <img src={imageSrc} alt="Artist" />}
+            {name && <h2>{name}</h2>}
+            {release_date && <p>{release_date}</p>}
+        </div>
     );
 }
 
@@ -37,11 +71,7 @@ export default async function  ArtistCard () {
 
 
 
-
-
-
-
-
+/////////////////////////////////// ESSAI 6 ///////////////////////////////////
 // 'use client';
 // import { useState, useEffect } from 'react';
 // import styles from './card.module.scss';
@@ -88,6 +118,9 @@ export default async function  ArtistCard () {
 
 
 
+
+
+/////////////////////////////////// ESSAI 7 ///////////////////////////////////
 // 'use client';
 // import React, { useEffect, useState } from 'react';
 // import fetchSpotifyApi from '../API/SpotifyCompleteAPI';

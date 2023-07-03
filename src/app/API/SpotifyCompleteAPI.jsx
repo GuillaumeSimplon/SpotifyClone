@@ -63,24 +63,24 @@ export default fetchSpotifyApi;
 
 //////////////////////////////////////////////////////////
 // CLE API
-let apiKey = null;
+// let apiKey = null;
 
 
-export async function getAPIKey() {
-    if (apiKey === null) {
-        await resetAPIKey();
-    }
-    return apiKey
-}
+// export async function getAPIKey() {
+//     if (apiKey === null) {
+//         await resetAPIKey();
+//     }
+//     return apiKey
+// }
 
 
 
-export async function resetAPIKey() {
-    axios.post("https://accounts.spotify.com/api/token",
-        `grant_type=client_credentials&client_id=${process.env.SPOTIFY_CLIENT_ID}&client_secret=${process.env.SPOTIFY_CLIENT_SECRET}`,
-        {
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            }
-        }).then(response => apiKey = response.data.access_token)
-}
+// export async function resetAPIKey() {
+//     axios.post("https://accounts.spotify.com/api/token",
+//         `grant_type=client_credentials&client_id=${process.env.SPOTIFY_CLIENT_ID}&client_secret=${process.env.SPOTIFY_CLIENT_SECRET}`,
+//         {
+//             headers: {
+//                 'Content-Type': 'application/x-www-form-urlencoded'
+//             }
+//         }).then(response => apiKey = response.data.access_token)
+// }

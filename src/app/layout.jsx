@@ -1,7 +1,7 @@
 import './globals.scss'
 import { Inter } from 'next/font/google'
 import Header from './header/Header';
-import { getAPIKey } from "./API/SpotifyCompleteAPI";
+// import { getAPIKey } from "./API/SpotifyCompleteAPI";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,8 +17,8 @@ export default function RootLayout({ children }) {
         <Header />
         <div>
           {/* <div className='appContainer'>
-          </div> */}
-          <p>{getAPIKey()}</p>
+          </div>
+          <p>{getAPIKey()}</p> */}
         </div>
         {children}</body>
     </html>
